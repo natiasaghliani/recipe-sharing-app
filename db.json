@@ -1,0 +1,304 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish with creamy sauce.",
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Pancetta",
+        "Parmesan Cheese",
+        "Black Pepper"
+      ],
+      "instructions": "Boil pasta, cook pancetta, mix with eggs and cheese, combine with pasta.",
+      "thumbnail": "https://images.services.kitchenstories.io/z_bWPIhhM6qs38B0E46CRaYs81Q=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2568-photo-final-_0.jpg",
+      "favorite": false
+    },
+    {
+      "title": "Chicken Biryani",
+      "description": "A flavorful rice dish with aromatic spices.",
+      "ingredients": [
+        "Chicken",
+        "Basmati Rice",
+        "Yogurt",
+        "Spices",
+        "Onions"
+      ],
+      "instructions": "Marinate chicken, cook rice, layer and steam together.",
+      "thumbnail": "https://www.cookwithnabeela.com/wp-content/uploads/2025/01/ChickenBiryani.webp",
+      "id": "2",
+      "favorite": true
+    },
+    {
+      "title": "Margherita Pizza",
+      "description": "Simple pizza with fresh tomatoes, basil, and mozzarella.",
+      "ingredients": [
+        "Pizza Dough",
+        "Tomato Sauce",
+        "Mozzarella",
+        "Basil",
+        "Olive Oil",
+        "Tomato"
+      ],
+      "instructions": "Prepare dough. Spread sauce. Add cheese and basil. Bake.",
+      "thumbnail": "https://foodbyjonister.com/wp-content/uploads/2020/01/pizzadough18.jpg",
+      "id": "3",
+      "favorite": true
+    },
+    {
+      "id": "4",
+      "title": "Greek Salad",
+      "description": "Refreshing salad with cucumbers, tomatoes, olives, and feta.",
+      "thumbnail": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/3/4/2/FNM_040113-Classic-Greek-Salad-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382542290621.webp",
+      "ingredients": [
+        "Cucumber",
+        "Tomatoes",
+        "Olives",
+        "Feta Cheese",
+        "Olive Oil"
+      ],
+      "instructions": "Chop vegetables. Mix with feta and olives. Drizzle olive oil.",
+      "favorite": false
+    },
+    {
+      "id": "5",
+      "title": "Beef Tacos",
+      "description": "Delicious beef tacos with fresh toppings.",
+      "thumbnail": "https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg",
+      "ingredients": [
+        "Ground Beef",
+        "Taco Shells",
+        "Lettuce",
+        "Cheese",
+        "Salsa"
+      ],
+      "instructions": "Cook beef with spices. Fill taco shells. Add toppings.",
+      "favorite": false
+    },
+    {
+      "id": "6",
+      "title": "Vegetable Stir-Fry",
+      "description": "Quick and healthy stir-fried vegetables.",
+      "thumbnail": "https://sisijemimah.com/wp-content/uploads/2017/02/IMG_8966.jpg",
+      "ingredients": [
+        "Broccoli",
+        "Carrots",
+        "Bell Peppers",
+        "Soy Sauce",
+        "Garlic"
+      ],
+      "instructions": "Chop vegetables. Stir-fry in a pan with soy sauce.",
+      "favorite": false
+    },
+    {
+      "id": "7",
+      "title": "Avocado Toast",
+      "description": "Simple and nutritious avocado toast with toppings.",
+      "thumbnail": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/avocado-on-toast-96e3158.jpg",
+      "ingredients": [
+        "Bread",
+        "Avocado",
+        "Tomatoes",
+        "Egg",
+        "Salt"
+      ],
+      "instructions": "Toast bread. Mash avocado. Add toppings.",
+      "favorite": false
+    },
+    {
+      "id": "8",
+      "title": "Mushroom Risotto",
+      "description": "Creamy risotto with mushrooms and Parmesan.",
+      "thumbnail": "https://www.thespruceeats.com/thmb/ZEowdu14wmTI2tdAGQaAA1lw6YY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mushroom-risotto-recipe-996005-hero-01-85f8cef9cf8042e8afbaa9d2e46c1fa8.jpg",
+      "ingredients": [
+        "Arborio Rice",
+        "Mushrooms",
+        "Onion",
+        "Parmesan",
+        "White Wine"
+      ],
+      "instructions": "Cook rice with broth. Add mushrooms and Parmesan.",
+      "favorite": false
+    },
+    {
+      "id": "9",
+      "title": "Homemade Burger",
+      "description": "Juicy beef burger with fresh toppings.",
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2024/06/Homemade-Hamburgers-Side-500x375.jpg",
+      "ingredients": [
+        "Ground Beef",
+        "Buns",
+        "Lettuce",
+        "Cheese",
+        "Tomato"
+      ],
+      "instructions": "Grill beef patty. Assemble burger with toppings.",
+      "favorite": false
+    },
+    {
+      "id": "10",
+      "title": "Tomato Basil Soup",
+      "description": "Rich tomato soup with fresh basil.",
+      "thumbnail": "https://www.cubesnjuliennes.com/wp-content/uploads/2022/09/Tomato-Basil-Soup-Recipe.jpg",
+      "ingredients": [
+        "Tomatoes",
+        "Basil",
+        "Garlic",
+        "Onion",
+        "Cream"
+      ],
+      "instructions": "Cook tomatoes and basil. Blend and add cream.",
+      "favorite": true
+    },
+    {
+      "id": "11",
+      "title": "Grilled Salmon",
+      "description": "Perfectly grilled salmon with lemon and herbs.",
+      "thumbnail": "https://res.cloudinary.com/hksqkdlah/image/upload/41765-sfs-grilled-salmon-10664.jpg",
+      "ingredients": [
+        "Salmon",
+        "Lemon",
+        "Garlic",
+        "Olive Oil",
+        "Herbs"
+      ],
+      "instructions": "Marinate salmon. Grill until cooked.",
+      "favorite": false
+    },
+    {
+      "id": "12",
+      "title": "Chocolate Brownies",
+      "description": "Fudgy and delicious chocolate brownies.",
+      "thumbnail": "https://www.thecookingcollective.com.au/wp-content/uploads/2022/09/triple-chocolate-brownies-3.jpg",
+      "ingredients": [
+        "Chocolate",
+        "Flour",
+        "Sugar",
+        "Butter",
+        "Eggs"
+      ],
+      "instructions": "Mix ingredients. Bake until set.",
+      "favorite": false
+    },
+    {
+      "id": "13",
+      "title": "Caprese Salad",
+      "description": "Fresh mozzarella, tomatoes, and basil salad.",
+      "thumbnail": "https://www.thespruceeats.com/thmb/2pjgFA7_nbZtlXr68BECvf6fO48=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caprese-salad-tomato-salad-2217097-hero-03-75a0b89b30aa4a52b10fe4fdd9abfeb5.jpg",
+      "ingredients": [
+        "Mozzarella",
+        "Tomatoes",
+        "Basil",
+        "Olive Oil",
+        "Balsamic"
+      ],
+      "instructions": "Slice ingredients. Drizzle with oil and balsamic.",
+      "favorite": false
+    },
+    {
+      "title": "Chicken Curry",
+      "description": "Spicy and flavorful chicken curry.",
+      "ingredients": [
+        "Chicken",
+        "Curry Powder",
+        "Coconut Milk",
+        "Onion",
+        "Garlic"
+      ],
+      "instructions": "Cook chicken with spices. Add coconut milk and simmer.",
+      "thumbnail": "https://www.jocooks.com/wp-content/uploads/2019/10/coconut-chicken-curry-1-10.jpg",
+      "id": "14"
+    },
+    {
+      "id": "15",
+      "title": "Oatmeal Pancakes",
+      "description": "Healthy pancakes made with oats and bananas.",
+      "thumbnail": "https://www.acouplecooks.com/wp-content/uploads/2021/01/Oatmeal-Pancakes-001s.jpg",
+      "ingredients": [
+        "Oats",
+        "Bananas",
+        "Eggs",
+        "Milk",
+        "Cinnamon"
+      ],
+      "instructions": "Blend ingredients. Cook pancakes on a skillet.",
+      "favorite": false
+    },
+    {
+      "id": "16",
+      "title": "Stuffed Bell Peppers",
+      "description": "Bell peppers filled with seasoned rice and meat.",
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2023/08/Stuffed-Bell-Peppers-close.jpg",
+      "ingredients": [
+        "Bell Peppers",
+        "Rice",
+        "Ground Beef",
+        "Tomato Sauce",
+        "Cheese"
+      ],
+      "instructions": "Stuff peppers with filling. Bake until tender.",
+      "favorite": false
+    },
+    {
+      "id": "17",
+      "title": "Garlic Shrimp Pasta",
+      "description": "Delicious shrimp pasta in garlic butter sauce.",
+      "thumbnail": "https://amyinthekitchen.com/wp-content/uploads/2022/05/Pasta-with-garlic-butter-shrimp-recipe.jpg",
+      "ingredients": [
+        "Shrimp",
+        "Pasta",
+        "Garlic",
+        "Butter",
+        "Parsley"
+      ],
+      "instructions": "Cook shrimp in garlic butter. Mix with pasta.",
+      "favorite": false
+    },
+    {
+      "id": "18",
+      "title": "Lemon Cheesecake",
+      "description": "Creamy cheesecake with a zesty lemon flavor.",
+      "thumbnail": "https://sweetsandthankyou.com/wp-content/uploads/2024/02/Lemon-Cheesecake22-3.jpg",
+      "ingredients": [
+        "Cream Cheese",
+        "Lemon",
+        "Sugar",
+        "Eggs",
+        "Graham Crackers"
+      ],
+      "instructions": "Mix ingredients. Bake until set.",
+      "favorite": false
+    },
+    {
+      "id": "19",
+      "title": "Pesto Pasta",
+      "description": "Pasta with fresh basil pesto sauce.",
+      "thumbnail": "https://vancouverwithlove.com/wp-content/uploads/2023/08/pasta-al-pesto-24-1.jpg",
+      "ingredients": [
+        "Pasta",
+        "Basil",
+        "Pine Nuts",
+        "Garlic",
+        "Parmesan"
+      ],
+      "instructions": "Blend basil, nuts, garlic, and cheese. Toss with pasta.",
+      "favorite": false
+    },
+    {
+      "id": "20",
+      "title": "Chicken Caesar Salad",
+      "description": "Classic Caesar salad with grilled chicken.",
+      "thumbnail": "https://dinnersdishesanddesserts.com/wp-content/uploads/2021/11/Caesar-Salad-square-scaled.jpg",
+      "ingredients": [
+        "Chicken",
+        "Romaine Lettuce",
+        "Croutons",
+        "Parmesan",
+        "Caesar Dressing"
+      ],
+      "instructions": "Grill chicken. Toss with lettuce, croutons, cheese, and dressing.",
+      "favorite": false
+    }
+  ]
+}

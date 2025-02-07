@@ -1,0 +1,167 @@
+<div class="container mx-auto p-6">
+  <div class="mx-auto max-w-xl text-center">
+    <h1 class="text-3xl font-bold text-orange-500">
+      {{ isEditMode ? "Edit Recipe" : "Add New Recipe" }}
+    </h1>
+  </div>
+  <form
+    [formGroup]="recipeForm"
+    (ngSubmit)="onSubmit()"
+    class="mx-auto mt-2 max-w-xl"
+  >
+    <div class="grid grid-cols-1 gap-x-8 gap-y-1">
+      <div class="mb-4">
+        <label for="title" class="block mb-1 font-semibold">Title</label>
+        <input
+          type="text"
+          id="title"
+          formControlName="title"
+          class="w-full p-2 border rounded border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          [ngClass]="{
+            'border-red-500':
+              recipeForm.get('title')?.invalid &&
+              recipeForm.get('title')?.touched
+          }"
+        />
+        @if(recipeForm.get('title')?.invalid &&
+        recipeForm.get('title')?.touched){
+        <div class="text-red-500 text-sm">Title is required.</div>
+        }
+      </div>
+      <div class="mb-4">
+        <label for="description" class="block mb-1 font-semibold"
+          >Description</label
+        >
+        <textarea
+          id="description"
+          formControlName="description"
+          rows="3"
+          class="w-full p-2 border rounded border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          [ngClass]="{
+            'border-red-500':
+              recipeForm.get('description')?.invalid &&
+              recipeForm.get('description')?.touched
+          }"
+        ></textarea>
+        @if (recipeForm.get('description')?.invalid
+        &&recipeForm.get('description')?.touched) {
+        <div class="text-red-500 text-sm">Description is required.</div>
+        }
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1 font-semibold">Ingredients</label>
+        <div formArrayName="ingredients">
+          @for(ingredientCtrl of ingredients.controls; track $index;let i =
+          $index){
+          <div class="flex mb-2">
+            <input
+              type="text"
+              [formControlName]="i"
+              class="flex-1 p-2 border rounded border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              [ngClass]="{
+                'border-red-500':
+                  ingredientCtrl.invalid && ingredientCtrl.touched
+              }"
+            />
+            <button
+              type="button"
+              (click)="removeIngredient(i)"
+              class="ml-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                fill="red"
+                viewBox="0 0 128 128"
+              >
+                <path
+                  d="M 49 1 C 47.34 1 46 2.34 46 4 C 46 5.66 47.34 7 49 7 L 79 7 C 80.66 7 82 5.66 82 4 C 82 2.34 80.66 1 79 1 L 49 1 z M 24 15 C 16.83 15 11 20.83 11 28 C 11 35.17 16.83 41 24 41 L 101 41 L 101 104 C 101 113.37 93.37 121 84 121 L 44 121 C 34.63 121 27 113.37 27 104 L 27 52 C 27 50.34 25.66 49 24 49 C 22.34 49 21 50.34 21 52 L 21 104 C 21 116.68 31.32 127 44 127 L 84 127 C 96.68 127 107 116.68 107 104 L 107 40.640625 C 112.72 39.280625 117 34.14 117 28 C 117 20.83 111.17 15 104 15 L 24 15 z M 24 21 L 104 21 C 107.86 21 111 24.14 111 28 C 111 31.86 107.86 35 104 35 L 24 35 C 20.14 35 17 31.86 17 28 C 17 24.14 20.14 21 24 21 z M 50 55 C 48.34 55 47 56.34 47 58 L 47 104 C 47 105.66 48.34 107 50 107 C 51.66 107 53 105.66 53 104 L 53 58 C 53 56.34 51.66 55 50 55 z M 78 55 C 76.34 55 75 56.34 75 58 L 75 104 C 75 105.66 76.34 107 78 107 C 79.66 107 81 105.66 81 104 L 81 58 C 81 56.34 79.66 55 78 55 z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          }
+        </div>
+        <button type="button" (click)="addIngredient()" class="cursor-pointer">
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="#1C274C"
+              stroke-width="1.5"
+            />
+            <path
+              d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15"
+              stroke="#1C274C"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mb-4">
+        <label for="instructions" class="block mb-1 font-semibold"
+          >Instructions</label
+        >
+        <textarea
+          id="instructions"
+          formControlName="instructions"
+          rows="5"
+          class="w-full p-2 border rounded border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          [ngClass]="{
+            'border-red-500':
+              recipeForm.get('instructions')?.invalid &&
+              recipeForm.get('instructions')?.touched
+          }"
+        ></textarea>
+        @if(recipeForm.get('instructions')?.invalid
+        &&recipeForm.get('instructions')?.touched){}
+        <div class="text-red-500 text-sm">Instructions are required.</div>
+      </div>
+
+      <div class="mb-4">
+        <label for="thumbnail" class="block mb-1 font-semibold"
+          >Thumbnail Image</label
+        >
+        <input
+          type="file"
+          id="thumbnail"
+          (change)="onThumbnailChange($event)"
+          class="w-full p-2 border rounded border-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        />
+        @if (recipeForm.get('thumbnail')?.invalid &&
+        recipeForm.get('thumbnail')?.touched) {
+        <div class="text-red-500 text-sm">Thumbnail is required.</div>
+        } @if (thumbnailPreview) {
+        <div class="mt-4">
+          <img
+            [src]="thumbnailPreview"
+            alt="Thumbnail Preview"
+            class="w-64 h-auto rounded"
+          />
+        </div>
+        }
+      </div>
+
+      <button
+        type="submit"
+        class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
+      >
+        {{ isEditMode ? "Update Recipe" : "Submit Recipe" }}
+      </button>
+    </div>
+  </form>
+</div>

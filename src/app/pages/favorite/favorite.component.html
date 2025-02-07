@@ -1,0 +1,43 @@
+@if(favoriteRecipes.length){
+<div
+  class="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+>
+  @for(recipe of favoriteRecipes; track recipe.id){
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden relative max-h-96">
+    <button
+      (click)="toggleFavorite(recipe)"
+      [ngClass]="{
+        'text-red-500': recipe.favorite,
+        'text-black-200': !recipe.favorite
+      }"
+      class="absolute top-2 right-4 text-4xl transition-all cursor-pointer"
+    >
+      ♥
+    </button>
+    <img
+      [src]="recipe.thumbnail"
+      alt="Recipe Image"
+      class="w-full h-60 object-cover"
+    />
+    <div class="p-4">
+      <h2 class="text-xl font-semibold line-clamp-1">{{ recipe.title }}</h2>
+      <p class="text-gray-600 text-sm mt-2 line-clamp-1">
+        {{ recipe.description }}
+      </p>
+      <button
+        (click)="viewRecipe(recipe.id)"
+        class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition cursor-pointer"
+      >
+        View Recipe
+      </button>
+    </div>
+  </div>
+  }
+</div>
+} @else {
+<div class="flex items-center justify-center w-full h-[calc(100vh-246px)] sm:h-[calc(100vh-222px)]">
+  <h1 class="text-3xl font-bold text-center text-orange-500">
+    No favorite recipes found
+  </h1>
+</div>
+}
