@@ -44,7 +44,7 @@
           }"
         ></textarea>
         @if (recipeForm.get('description')?.invalid
-        &&recipeForm.get('description')?.touched) {
+        && recipeForm.get('description')?.touched) {
         <div class="text-red-500 text-sm">Description is required.</div>
         }
       </div>
@@ -128,8 +128,9 @@
           }"
         ></textarea>
         @if(recipeForm.get('instructions')?.invalid
-        &&recipeForm.get('instructions')?.touched){}
+        &&recipeForm.get('instructions')?.touched){
         <div class="text-red-500 text-sm">Instructions are required.</div>
+        }
       </div>
 
       <div class="mb-4">
